@@ -28,11 +28,7 @@ Hier sehen sie die Mitarbeiter
 	
 	$con=mysqli_connect($sql_host, $sql_user, $sql_password,$sql_database);
 
-	$sqlquery="SELECT 
-	case 
-		when exists (select fachgebiete.leitung from `fachgebiete` where fachgebiete.leitung = mitarbeiter.mitarbeiterid) then 'Ja'
-        else 'Nein'
-	end as 'Leitung', 
+	$sqlquery="SELECT case when exists (select fachgebiete.leitung from `fachgebiete` where fachgebiete.leitung = mitarbeiter.mitarbeiterid) then 'Ja' else 'Nein' end as 'Leitung', 
     mitarbeiter.name, mitarbeiter.vorname, mitarbeiter.geschlecht, mitarbeiter.stundensatz, 
     fachgebiete.name, mitarbeiterstandorte.standort, standorte.koordinatennord, standorte.koordniatensued from `mitarbeiter` 
 	inner join `fachgebiete` on mitarbeiter.fachgebiet = fachgebiete.id
