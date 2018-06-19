@@ -1,13 +1,12 @@
 function loadMitarbeiter() {
     $(".load-icon").show()
-    $.ajax({
+    let request = {
         type: "GET",
-        url: "test.php",
-        success: (data) => {
-
-            $(".load-icon").hide()
-            alert(data)
-            $("#test-apple").append("data")
-        }
+        url: "php/mitarbeiter.php",
+        dataType: "text"
+    }
+    $.ajax(request).done((data) => {
+        $(".load-icon").hide()
+        $(".tabelle-mitarbeiter-result").append(data)
     })
 }

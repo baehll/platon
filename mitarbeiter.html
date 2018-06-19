@@ -21,7 +21,6 @@
                 Hier sehen Sie eine Auflistung der Mitarbeiter
             </h1>
         </header>
-        <button onclick=loadMitarbeiter()>Mitarbeiter laden</button>
         <div class="tabelle-mitarbeiter">
             <table class="tabelle-mitarbeiter-result">
                 <th>Leitung</th>
@@ -30,17 +29,17 @@
                 <th>Geschlecht</th>
                 <th>Stundensatz</th>
                 <th>Fachabteilung</th>
-                <th>Stundensatz</th>
+                <th>Standort</th>
                 <th>Südl. Koordinate</th>
                 <th>Nördl. Koordinate</th>
             </table>
-            <div id="liste-mitarbeiter">
-                <div class="load-icon">
-                </div>
-            </div>
+            <div class="load-icon"></div>
         </div>
 
     </div>
+    <script>
+        $(window).on("load", () => loadMitarbeiter())
+    </script>
 </body>
 
 </html>
