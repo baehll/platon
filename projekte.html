@@ -1,0 +1,37 @@
+﻿<html>
+
+<head>
+    <title>
+        Platon|Projekte
+    </title>
+    <meta charset="utf-8">
+    <script src="script/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="script/index.js" type="text/javascript"></script>
+    <link href="style/custom.css" rel="stylesheet" type="text/css"></link>
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <a href="index.html" style="text-decoration: none; " class="zuruck"> Zur&uuml;ck</a>
+        <a href="mitarbeiter.php" style="text-decoration: none; " class="page">Mitarbeiter</a>
+        <div>
+
+            <header>
+                <h1>
+                    Hier sehen Sie die Projekte
+                </h1>
+            </header>
+            Projektname:
+            <input type="text" id="name"></input>
+            <select name="leiter" id="leiter">
+				<option value=1>TEST</option>
+			</select>
+            <input type="date" id="start"></input>
+            <input type="date" id="ende"></input>
+            <button onclick="submitProj()">Los</button>
+            <div class="load-icon"></div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+﻿<html>
+
+<head>
+    <title>
+        Platon|Mitarbeiter
+    </title>
+    <meta charset="utf-8">
+    <script src="script/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="script/index.js" type="text/javascript"></script>
+    <link href="style/custom.css" rel="stylesheet" type="text/css"></link>
+</head>
+
+<body class="default-body">
+    <div>
+        <a href="index.html" style="text-decoration: none; " class="zuruck"> Zur&uuml;ck 
+  </a>
+        <a href="projekte.html" style="text-decoration: none; " class="page">Projekte 
+  </a>
+        <header>
+            <h1>
+                Hier sehen Sie eine Auflistung der Mitarbeiter
+            </h1>
+        </header>
+        <div class="tabelle-mitarbeiter">
+            <table class="tabelle-mitarbeiter-result">
+                <th>Leitung</th>
+                <th>Name</th>
+                <th>Vorname</th>
+                <th>Geschlecht</th>
+                <th>Stundensatz</th>
+                <th>Fachabteilung</th>
+                <th>Standort</th>
+                <th>Südl. Koordinate</th>
+                <th>Nördl. Koordinate</th>
+            </table>
+            <div class="load-icon"></div>
+        </div>
+
+    </div>
+    <script>
+        $(window).on("load", () => loadMitarbeiter())
+    </script>
+</body>
+
+</html>
